@@ -1,9 +1,9 @@
 # Trabajo-codo-a-codo-22507
 6/10 creado index responsive para poder usar como plantilla
 Tareas:
->crear html/js pagina de compras
->crear html/js formulario de registro
->crear html sobre nosotros
+-crear html/js pagina de compras
+-crear html/js formulario de registro
+-crear html sobre nosotros
 
 Trabajo grupal entrega miércoles 19 al viernes 21 de octubre (clase 22)
 
