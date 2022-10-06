@@ -1,6 +1,12 @@
 # Trabajo-codo-a-codo-22507
-6/10 creado index responsive para poder usar como plantilla
+6/10 Creado index responsive para poder usar como plantilla
 ------------------------------------------------------------------------------
+Cortes responsive:
+--
+> fondo img/paws-pattern indica fullscreen, fondo negro tablet, fondo blanco movil
+
+cambiar todo a paws-pattern al finalizar el proyecto
+
 Tareas:
 --------------------
 >crear html/js pagina de compras
