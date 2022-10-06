@@ -1,0 +1,346 @@
+/* grid */
+* {
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+body{
+    background-image: url(img/dog-paws-pattern.jpg);
+
+}
+
+.wrapper{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: auto;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+}
+a, a:visited, a:active{
+    color:azure;
+    text-decoration: none;
+    font-size: 1rem;
+}
+a:hover{
+    color:black;
+}
+.wrapper > div,
+.wrapper .header,
+.wrapper .footer,
+.wrapper .main {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+.main, .footer{
+    margin-top: 1em;
+}
+.wrapper .header{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    /*background-color: rgb(130, 214, 235);*/
+    align-items: center;
+    background-image: linear-gradient(to bottom right, rgba(40, 150, 177),rgb(72, 192, 222), rgb(103, 178, 253));
+    
+}
+.wrapper .header > div{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.header .burguer-menu{
+   
+    border: none;
+}
+.wrapper .menuMobile{
+    grid-row-start: auto;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display:none;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+    background-color: transparent;
+    margin-top: none;
+    row-gap: 0;
+    
+}
+.wrapper .menuMobile > a{
+        font-size: 1.5em;
+        border-style: groove;
+        border-color: #1763a5;
+}
+.wrapper .main{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.wrapper .footer{
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1em;
+    background-color: #1763a5;
+    color: white;
+}
+.wrapper .disclaimer{
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background-color: #1763a5;
+    text-align: justify;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+}
+.wrapper .footer li{
+    margin:0.5em;
+}
+.logo{
+    width:4em;
+}
+.logonombre {
+    height: 4em;
+}
+.wrapper .footer .newsletter{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.nav-link{    
+    padding: 0.4em;
+    border-radius: 5px;
+    background: #0e4a80;
+    color:azure;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.nav-link:hover{
+    background: white;
+    color: black;
+}
+.input-news{
+    margin:0.5em;
+}
+.btn-news{
+    background-color: #0e4a80;
+    padding: 0.5em;
+    border-radius: 15%;
+    color:white;
+}
+
+.header .burguer-menu{
+    display: none;   
+}
+.input-news{
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+    background-color: #0e4a80;
+    font-size: 1em;
+    padding: 0.5em 2em;
+}
+.btn-news{
+    border: #082b49;
+    border-radius: 15px;
+    border-style: solid;
+}
+.brand-footer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.card-container{
+    display:flex;
+    margin-top: 3em;
+    text-align: center;
+}
+.main-title{
+    margin: 2em 0 1em 0;
+    text-align: center;
+    background-color: #1763a5;
+    border-radius: 10px;
+    padding: 1em 0 1em 0;
+    font-weight: 1100;
+    color: #fff;
+}
+.card {
+    background-color: #1763a5;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.2s;
+    border-radius: 5px;
+    margin: 0 0.5em 0 0.5em;
+    padding: 0.5em;
+  }
+.card:hover{
+    transform: scale(1.1);
+    margin: 0 auto;
+}
+.card-img {
+    border-radius: 10px;
+    width: 100px;
+    margin: 0.2em 0 0.2em 0;
+  }
+.dashed{
+    size: 3px;
+    border-color:#082b49;
+    border-style: dashed;
+}
+.brand-container{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+.brand-item{
+    margin: 0 1em 0 1em;
+}
+/* responsive tablet */
+@media screen and (max-width: 1085px){
+    body{
+        background:#000;
+    }
+    .wrapper .header{
+        flex-wrap: nowrap;
+    }   
+    .wrapper .header {
+        justify-content: space-between;
+    }
+    .header .burguer-menu{
+        display: flex;
+        font-size: 1.5em;
+    }
+    nav{
+        display: none;
+    }
+    .footer div{
+        width:50%;
+    }
+    .newsletter{
+        width: 100%;
+        align-self: flex-end;
+    }
+    .wrapper .footer div{
+        margin: 0em 1em 0em 1em;
+    }
+}
+/* responsive movil */
+@media screen and (max-width: 480px){
+    body{
+    background: white;
+}       
+    nav{
+        display: none;
+    }
+    .header {
+        justify-content: center;
+    }
+   
+    nav{
+        display: none;
+    }
+    .header {
+        flex-wrap: nowrap;
+    }
+    .wrapper .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+
+    }
+    .wrapper .footer div{
+        margin: 1em 0 1em 0;
+    }
+    .main .container-slider{
+        height: 200px;
+    }
+    .container-slider .slider {
+        height: 200px;
+    }
+    .socials{
+        display: flex;
+        justify-content: space-around;
+    }
+    .card-container{
+        flex-wrap: wrap;
+        margin-top: 1em;
+        text-align: center;
+    }
+    .card{
+        margin-top: 0.5em;
+    }
+    .brand-container{
+        flex-direction: column;
+    }
+    .brand-item{
+        margin: 1em 0 1em 0;
+    }
+}
+
+
+/* slider */
+
+.container-slider {
+    width: 100%;
+    margin:auto;
+    overflow:hidden;
+    box-shadow: 0 0 0 10px #fff,
+                0 10px 20px;
+    position:relative;
+}
+.slider{
+    display:flex;
+    width:400%;
+    height:400px;
+    margin-left: -100%;
+}
+.slider-section {
+    width: 100%;
+}
+.slider-img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.slider-btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider-btn:hover{
+    background:#fff;
+}
+.slider-btn-left{
+    left:10px;
+}
+.slider-btn-right{
+    right:10px;
+}
