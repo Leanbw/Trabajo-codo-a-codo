@@ -46,7 +46,6 @@ a:hover{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    /*background-color: rgb(130, 214, 235);*/
     align-items: center;
     background-image: linear-gradient(to bottom right, rgba(40, 150, 177),rgb(72, 192, 222), rgb(103, 178, 253));
     
@@ -133,6 +132,7 @@ a:hover{
 .nav-link:hover{
     background: white;
     color: black;
+    cursor: pointer;
 }
 .input-news{
     margin:0.5em;
@@ -180,6 +180,15 @@ a:hover{
     font-weight: 1100;
     color: #fff;
 }
+.title{
+    margin: 0 0 1em 0;
+    text-align: center;
+    background-color: #1763a5;
+    border-radius: 10px;
+    padding: 1em 0 1em 0;
+    font-weight: 1100;
+    color: #fff;
+}
 .card {
     background-color: #1763a5;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -212,6 +221,75 @@ a:hover{
 .brand-item{
     margin: 0 1em 0 1em;
 }
+.contact-card{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    overflow: hidden;
+}
+.map-iframe{
+    margin-top: -50px;
+   
+}
+.map-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+    margin: 0 1em;
+}
+.contact-form{
+    background-color: #1763a5;
+    border-radius: 10px;
+    padding: 20px;
+}
+.form-input{
+    background-color: #1763a5;
+    width: 90%;
+    padding: 10px 1em 10px 1em;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 16px;
+    margin: 5px 0px 5px 0px;
+}
+
+::placeholder{
+    color:white;
+    opacity: 60%;
+    
+}
+.main-contacto{
+    display:flex;
+    flex-direction: column;
+}
+.btn-submit{
+    margin: 1em 0 1em 0;
+    text-align: center;
+    background-color: #1763a5;
+    border-radius: 10px;
+    padding: 1em;
+    font-weight: 1100;
+    color: #fff;
+    font-size: 16px;
+    border:2px solid #082b49;
+    width: 100%;
+    
+}
+.btn-submit:hover{   
+    color: black;
+    cursor: pointer;
+}
+#comment-input{
+    resize:none;
+}
+.contact-form{
+    display:flex;
+    flex-direction: column;
+    align-items: center
+}
+.form-input{
+    width: 95%;
+}
 /* responsive tablet */
 @media screen and (max-width: 1085px){
     body{
@@ -239,6 +317,9 @@ a:hover{
     }
     .wrapper .footer div{
         margin: 0em 1em 0em 1em;
+    }
+    .form-input{
+        
     }
 }
 /* responsive movil */
@@ -292,6 +373,17 @@ a:hover{
     }
     .brand-item{
         margin: 1em 0 1em 0;
+    }
+    .contact-card{
+        flex-direction: column;
+    }
+    .map-iframe{
+        width: 100%;
+        height: 20em;
+        margin-bottom: 1em;
+    }
+    .map-info{
+        height: 25em;
     }
 }
 
