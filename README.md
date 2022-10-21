@@ -1,4 +1,26 @@
-# Trabajo-codo-a-codo-22507
+21/10 creado html about us con api fetch
+------------------------------------------------------------------------------
+Tareas:
+--------------------
+>crear html/js pagina de compras / carrito
+
+cambiar los fondos de cada corte a img/paws-pattern al finalizar el proyecto
+
+19/10 creado html contacto con formulario e iframe
+------------------------------------------------------------------------------
+falta consigna consumir api, crear 2 html
+
+Tareas:
+--------------------
+>crear html/js pagina de compras
+
+>crear html sobre nosotros
+
+
+
+
+
+
 6/10 Creado index responsive para poder usar como plantilla
 ------------------------------------------------------------------------------
 Cortes responsive:
@@ -10,7 +32,7 @@ cambiar todo a paws-pattern al finalizar el proyecto
 Tareas:
 --------------------
 >crear html/js pagina de compras
-
+>crear html sobre nosotros
 >crear html/js formulario de registro
 
 >crear html sobre nosotros
