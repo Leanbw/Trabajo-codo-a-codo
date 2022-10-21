@@ -290,6 +290,55 @@ a:hover{
 .form-input{
     width: 95%;
 }
+#api-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+/*.vet-card{
+    border: 1px solid #082b49;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+}
+*/
+.vet-card{
+    background-color: #1763a5;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 30%;
+    border-radius: 10px;
+    margin: 10px;
+}
+.vet-card img{
+    border-radius: 10px;
+}
+.dog-card {
+    width: 30%;
+}
+.dog-card img{
+    border: 6px solid #0e4a80;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 6px 8px 20px #000;
+    margin: 1em 0;
+    
+}
+.local-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.local-info p{
+    margin: 10px;
+}
+.local-info > * {
+    width: 45%;
+}
+.store-img{
+   border-radius: 10px;
+}
 /* responsive tablet */
 @media screen and (max-width: 1085px){
     body{
@@ -318,9 +367,13 @@ a:hover{
     .wrapper .footer div{
         margin: 0em 1em 0em 1em;
     }
-    .form-input{
-        
+    .local-info{
+        flex-direction: column;
     }
+    .local-info > * {
+        width: 100%;
+    }
+
 }
 /* responsive movil */
 @media screen and (max-width: 480px){
@@ -384,6 +437,10 @@ a:hover{
     }
     .map-info{
         height: 25em;
+    }
+    .dog-card{
+        width: 40%;
+        margin: 1em;
     }
 }
 
