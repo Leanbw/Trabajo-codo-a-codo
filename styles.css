@@ -297,13 +297,7 @@ a:hover{
     justify-content: space-around;
     align-items: center;
 }
-/*.vet-card{
-    border: 1px solid #082b49;
-    border-radius: 10px;
-    width: 30%;
-    margin: 10px;
-}
-*/
+
 .vet-card{
     background-color: #1763a5;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -339,6 +333,69 @@ a:hover{
 .store-img{
    border-radius: 10px;
 }
+.store{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.shop-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+    align-items: center; 
+    width: 30%;
+    padding: 1em 1em;
+}
+.shop-item img{
+    width: 30%;
+}
+
+.shop-item a{
+    margin-top: 1em;
+}
+.store-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+label{
+    margin-right: 5px;
+}
+.hidden{
+    display:none;
+}
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin-top: 10px;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 10px 0 15px 0 ;
+}
+.cart-container img{
+   
+    height: 150px;
+}
+.cart-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+.cart-item span{
+    background-color: red;
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: system-ui;
+    cursor: pointer;
+    border: solid 2px black;
+}
+
 /* responsive tablet */
 @media screen and (max-width: 1085px){
     body{

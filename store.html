@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Silvestre</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/841a678cc4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            
+            <nav>
+                <a href="" class="nav-link ">Tienda <i class="fa-solid fa-paw"></i></a>
+                <a href="about us.html" class="nav-link">Sobre nosotros <i class="fa-solid fa-shield-dog"></i></a>
+                <a href="contacto.html" class="nav-link">Contacto <i class="fa-solid fa-syringe"></i></i></a>
+                <a href="" class="nav-link">Mi cuenta <i class="fa-solid fa-house"></i></a>
+                <a href="" class="nav-link">Mi carrito <i class="fa-solid fa-cart-shopping"></i> $0</a>
+            </nav>
+            <button class="burguer-menu nav-link" onclick="display()"><i class="fa-solid fa-bars"></i></button>
+            <div>
+                <a href="whatsapp.web" target="_blank" ><i class="fa-brands fa-whatsapp nav-link icons"></i></a>
+                <a href="facebook.com" target="_blank"><i class="fa-brands fa-facebook nav-link icons"></i></a>
+                <a href="index.html"><img src="img/logonombre.png" class="logonombre"></a>
+                <a href="index.html"><img src="img/headicon.png" class="logo"></a>
+            </div>
+        </div>
+        <div class="menuMobile" id="menuMobile" style="display: none;">
+            <a href="" class="nav-link">Tienda <i class="fa-solid fa-paw"></i></a>
+            <a href="" class="nav-link">Sobre nosotros <i class="fa-solid fa-shield-dog"></i></a>
+            <a href="" class="nav-link">Nuestros servicios <i class="fa-solid fa-syringe"></i></i></a>
+            <a href="" class="nav-link">Mi cuenta <i class="fa-solid fa-house"></i></a>
+            <a href="" class="nav-link">Mi carrito <i class="fa-solid fa-cart-shopping"></i> $0</a>
+            
+        </div>
+        
+        <div class="main">
+            
+            <h2 class="title">Tienda</h2>
+            <div class="store-menu">
+                <h4 class="nav-link" id="filters-btn">Filtros</h4> 
+            </div>    
+            <div class="filterMenu" id="filterMenu" style="display: none;">
+                <label class="nav-link">Cepillos y cuidado <input type="checkbox" id="brush-filter"></label>
+                <label class="nav-link">Juguetes <input type="checkbox" id="toy-filter"></label>
+                <label class="nav-link">Alimentos <input type="checkbox" id="food-filter"></label>
+            </div>
+            
+            <div class="store">
+                
+                <div class="shop-item brush-item">
+                    <div>
+                        <img src="img/producto1.webp" alt="">
+                        <p>$ <span>799</span></p>
+                    </div>
+                        <p class="item-name">Guante Para Peinar Saca Pelos Perro Gato Pelusa Animales</p>
+                        <a href="" data-id="1" class="btn-cart btn-news">Agregar al carrito</a>
+                </div>
+                    <div class="shop-item toy-item">
+                        <div>
+                            <img src="img/producto2.webp" alt="">
+                            <p>$ <span>1349</span></p>
+                        </div>
+                            <p class="item-name">Pesa Denta Fun Cuidado Dental Perros Cachorros</p>
+                            <a href="" data-id="2" class="btn-cart btn-news">Agregar al carrito</a>
+                    </div>
+                
+                    <div class="shop-item brush-item">
+                        <div>
+                            <img src="img/producto3.webp" alt="">
+                            <p>$ <span>659</span></p>
+                        </div>
+                            <p class="item-name">Cepillo De Dientes X 2 Unidades Para Mascotas</p>
+                            <a href="" data-id="3" class="btn-cart btn-news">Agregar al carrito</a>
+                    </div>
+
+                    <div class="shop-item toy-item">
+                        <div>
+                            <img src="img/producto4.webp" alt="">
+                            <p>$ <span>7239</span></p>
+                        </div>
+                            <p class="item-name">Kong Jump n Jack Large Cuidado Dental Y Rebote Impredecible</p>
+                            <a href="" data-id="4" class="btn-cart btn-news">Agregar al carrito</a>
+                    </div>
+
+                    <div class="shop-item brush-item">
+                        <div>
+                            <img src="img/producto5.webp" alt="">
+                            <p>$ <span>3549</span></p>
+                        </div>
+                            <p class="item-name">Peine Oster Profesional Acabado Cuidado 10 Perros Y Gatos</p>
+                            <a href="" data-id="5" class="btn-cart btn-news">Agregar al carrito</a>
+                    </div>
+
+                    <div class="shop-item food-item">
+                        <div>
+                            <img src="img/producto6.webp" alt="">
+                            <p>$ <span>7630</span></p>
+                        </div>
+                            <p class="item-name">Alimento Royal Canin Size Health Nutrition Mini Adult para perro adulto de raza pequeña sabor mix en bolsa de 7.5 kg</p>
+                            <a href="" data-id="6" class="btn-cart btn-news">Agregar al carrito</a>
+                    </div>
+
+                    <div class="shop-item food-item">
+                        <div>
+                            <img src="img/producto7.webp" alt="">
+                            <p>$ <span>11950</span></p>
+                        </div>
+                            <p class="item-name">Alimento Royal Canin Size Health Nutrition Medium Adult para perro adulto de raza mediana sabor mix en bolsa de 15 kg</p>
+                            <a href="" data-id="7" class="btn-cart btn-news">Agregar al carrito</a>
+                    </div>
+
+                    <div class="shop-item food-item">
+                        <div>
+                            <img src="img/producto8.webp" alt="">
+                            <p>$ <span>11200</span></p>
+                        </div>
+                            <p class="item-name">Alimento Royal Canin Veterinary Diet Canine Urinary S/O para perro adulto todos los tamaños sabor mix en bolsa de 10 kg</p>
+                            <a href="" data-id="8" class="btn-cart btn-news">Agregar al carrito</a>
+                    </div>
+
+                    <div class="shop-item toy-item">
+                        <div>
+                            <img src="img/producto9.webp" alt="">
+                            <p>$ <span>6131</span></p>
+                        </div>
+                            <p class="item-name">Kong Bone Extreme Medium Para Perros Juguete Nº 1 Del Mundo</p>
+                            <a href="" data-id="9" class="btn-cart btn-news">Agregar al carrito</a>
+                    </div>
+                    <h4 class="nav-link">Mi carrito</h4>
+                    <div class="cart-container"></div>
+                    <h2>Total: <strong class="price-total">0</strong> $</h2>
+                    
+            </div>
+            
+        <div class="footer">
+            <div class="brand-footer">
+                <div class="socials"><a href="whatsapp.web" target="_blank" ><i class="fa-brands fa-whatsapp nav-link icons"></i></a>
+                <a href="facebook.com" target="_blank"><i class="fa-brands fa-facebook nav-link icons"></i></a>
+                </div>
+                <a href="index.html"><img src="img/logonombre.png" class="logonombre"></a>
+                <a href="index.html"><img src="img/headicon.png" class="logo"></a>
+                
+            </div>
+            <hr class="dashed">
+            <div>
+                <ul>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="about us.html">Acerca de nosotros</a></li>
+                <li><a href="">Mi cuenta</a></li>
+                <li><a href="">Tienda</a></li>
+                <li><a href="">Mi carrito</a></li>
+                </ul>
+            </div>
+            <hr class="dashed">
+            <div class=""><h4> Nuestras sucursales:</h4> <br>
+                <p>Guardia Vieja 5329. <a href= "https://www.google.com.ar/maps/place/Guardia+Vieja+5329,+C1192ABA+CABA/@-34.5998171,-58.4318419,17.5z/data=!4m5!3m4!1s0x95bcca70696d11f3:0xc6b9049fb2ff4719!8m2!3d-34.5997437!4d-58.4301585" target="_blank">Ver en el mapa</a></p>
+                <p>Libertad 560. <a href= "https://www.google.com.ar/maps/place/Libertad+560,+C1012AAL+CABA/@-34.6019114,-58.386516,17z/data=!3m1!4b1!4m5!3m4!1s0x95bccac63d3bd9bb:0xf8fcfc9e270c7466!8m2!3d-34.6019114!4d-58.384322" target="_blank">Ver en el mapa</a></p>
+            </div>
+            <hr class="dashed">
+            <div class="newsletter">
+                
+                <h4>Subscribete a nuestro liveletter para recibir las ultimas noticias y ofertas en tu correo.</h4>
+                <form action="" target="">
+
+                    <input class="input-news" type="text" name="email" placeholder="Ingresa tu correo electronico">
+                    <p><button type="submit" class="btn-news nav-link">Enviar</button></p>
+                  
+                  </form>
+            </div>
+            
+        </div>
+        <div class="disclaimer"><p>Esta página esta hecha a modo de prueba por estudiantes del curso Codo a codo 2022, los datos no son reales y las imagenes pueden estar sujetas a derechos de autor.</p></div>    </div>
+    <script src="js/store.js"></script>
+</body>
+</html>
