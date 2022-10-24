@@ -1,3 +1,14 @@
+24/10 creado html/js de carrito funcional
+------------------------------------------------------------------------------
+
+Tareas:
+
+>resolver mostrar los items taggeados con checkboxs y seleccion multiple
+
+>mostrar el carrito en un html distinto con boton comprar
+
+>hacer responsive
+
 21/10 creado html about us con api fetch
 ------------------------------------------------------------------------------
 Tareas:
