@@ -31,6 +31,7 @@
                 <a href="index.html"><img src="img/headicon.png" class="logo"></a>
             </div>
         </div>
+
         <div class="menuMobile" id="menuMobile" style="display: none;">
             <a href="index.html" class="nav-link">Inicio <i class="fa-solid fa-house"></i></a>
             <a href="store.html" class="nav-link">Tienda <i class="fa-solid fa-paw"></i></a>
@@ -39,47 +40,23 @@
             <a href="cart.html" class="nav-link">Mi carrito <i class="fa-solid fa-cart-shopping"></i> $0</a>
         </div>
         
-        <div class="main main-contacto">
-            <h2 class="title">Envianos tu consulta</h2>
-            <form action="" class="contact-form">
-                <input type="text" placeholder="Ingresa tu Nombre" class="form-input" id="name-input" name="name">
-                <input type="text" placeholder="Ingresa tu e-mail" class="form-input" id="mail-input" name="mail">
-                <input placeholder="Ingresa tu telefono" class="form-input" id="phone-input" name="phone">
-                <textarea class="form-input" maxlength="150" rows="8" placeholder="Ingresa tu consulta" name="comment" id="comment-input"></textarea>
-                <button class="btn-submit" id="btn-submit" type="button">Enviar consulta</button>    
-            </form>
-            
-            <h2 class="main-title">NUESTRAS SUCURSALES</h2>
-            <div class="contact-card">
-                <iframe class="map-iframe" src="https://www.google.com/maps/d/embed?mid=1Ndh_GqoRIP3eXhCTtkzD61CCVUEWHyw&ehbc=2E312F" width="640" height="480"></iframe>
-                <div class="map-info">
-                    <h4>Guardia Vieja 5329</h4>
-                    
-                    <p>Lunes a viernes: 8 a 20:30 hs <br>
-                        Sábados: 9 a 20:30 hs<br>
-                        Domingos: 10 a 20 hs<br>
-                        Feriados: 10 a 19 hs<br>
-                        <br>
-                    Telefono: +54 11 98783547</p>
-                    <hr class="dashed">
-                    <h4>Libertad 560</h4>
-                    <p>Lunes a viernes: 8 a 20:30 hs <br>
-                        Sábados: 9 a 20:30 hs<br>
-                        Domingos: 10 a 20 hs<br>
-                        Feriados: 10 a 19 hs<br>
-                        <br>
-                    Telefono: +54 11 65784896</p>
-                </div>              
+        <div class="main">
+            <h2 class="title">Mi carrito</h2>
+            <div class="cart-container">
+                
             </div>
+            <br>
+            <h2 class="title">Total: <strong class="price-total">0</strong> $</h2>
+            <button class="btn-buy" id="btn-buy" type="submit">COMPRAR</button>
         </div>
         <div class="footer">
             <div class="brand-footer">
-                <div class="socials"><a href="https://web.whatsapp.com/" target="_blank" ><i class="fa-brands fa-whatsapp nav-link icons"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook nav-link icons"></i></a>
+                <div class="socials">
+                    <a href="https://web.whatsapp.com/" target="_blank" ><i class="fa-brands fa-whatsapp nav-link icons"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook nav-link icons"></i></a>
                 </div>
                 <a href="index.html"><img src="img/logonombre.png" class="logonombre"></a>
                 <a href="index.html"><img src="img/headicon.png" class="logo"></a>
-                
             </div>
             <hr class="dashed">
             <div>
@@ -92,7 +69,8 @@
                 </ul>
             </div>
             <hr class="dashed">
-            <div class=""><h4> Nuestras sucursales:</h4> <br>
+            <div>
+                <h4>Nuestras sucursales:</h4><br>
                 <p>Guardia Vieja 5329. <a href= "https://www.google.com.ar/maps/place/Guardia+Vieja+5329,+C1192ABA+CABA/@-34.5998171,-58.4318419,17.5z/data=!4m5!3m4!1s0x95bcca70696d11f3:0xc6b9049fb2ff4719!8m2!3d-34.5997437!4d-58.4301585" target="_blank">Ver en el mapa</a></p>
                 <p>Libertad 560. <a href= "https://www.google.com.ar/maps/place/Libertad+560,+C1012AAL+CABA/@-34.6019114,-58.386516,17z/data=!3m1!4b1!4m5!3m4!1s0x95bccac63d3bd9bb:0xf8fcfc9e270c7466!8m2!3d-34.6019114!4d-58.384322" target="_blank">Ver en el mapa</a></p>
             </div>
@@ -106,10 +84,11 @@
                     <p><button type="submit" class="btn-news nav-link">Enviar</button></p>
                   
                   </form>
-            </div>            
+            </div>
+            
         </div>
         <div class="disclaimer"><p>Esta página esta hecha a modo de prueba por estudiantes del curso Codo a codo 2022, los datos no son reales y las imagenes pueden estar sujetas a derechos de autor.</p></div>
-    </div>
-    <script src="js/validacion.js"></script>
+    </div>    
+    <script src="js/store.js"></script>
 </body>
 </html>

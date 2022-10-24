@@ -68,6 +68,7 @@ function deleteItem(e){
 
     if (cartItems.length === 0) {
         priceTotal.innerHTML = 0;
+        
     }
     printItem();
    
@@ -120,6 +121,9 @@ function printItem(){
 
         priceTotal.innerHTML = cartTotal;
     })
+    if (cartItems.length === 0) {
+    cartContainer.insertAdjacentHTML('afterbegin', '<p class="cart-placeholder">Tu carrito esta vacío agrega un producto para comprar</p>')
+    }
 }
 
 function clearList(){

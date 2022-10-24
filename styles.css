@@ -133,6 +133,7 @@ a:hover{
     background: white;
     color: black;
     cursor: pointer;
+    border: solid 1px black;
 }
 .input-news{
     margin:0.5em;
@@ -337,19 +338,23 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-end;
 }
-
+.cart-placeholder{
+    text-align: center;
+}
 .shop-item{
     display: flex;
     flex-direction: column;
     text-align: center;   
     align-items: center; 
+    justify-content: space-around;
     width: 30%;
     padding: 1em 1em;
 }
-.shop-item img{
+.shop-item div img{
     width: 30%;
+    height: 150px;
+    object-fit: scale-down;
 }
 
 .shop-item a{
@@ -368,23 +373,30 @@ label{
 }
 .cart-container{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
     width: 100%; 
     margin-top: 10px;
     border: solid 2px black;
     border-radius: 10px;
     padding: 10px 0 15px 0 ;
 }
-.cart-container img{
-   
+.cart-item img{
+    object-fit:scale-down;
     height: 150px;
+    width: 20%;
 }
 .cart-item{
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+    width: 90%;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin: 10px;
+}
+.item-content{
+    width: 60%;
+    font-size: 20px;
 }
 .cart-item span{
     background-color: red;
@@ -395,7 +407,18 @@ label{
     cursor: pointer;
     border: solid 2px black;
 }
-
+.btn-buy{
+    margin: auto;
+    padding: 10px 15px;
+    display: block;
+    background-color: rgb(251, 81, 81);
+    border-radius: 10px;
+}
+.btn-buy:hover{
+    transform: scale(1.5);
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
 /* responsive tablet */
 @media screen and (max-width: 1085px){
     body{
@@ -430,7 +453,12 @@ label{
     .local-info > * {
         width: 100%;
     }
-
+    .store{
+        justify-content: flex-start;
+    }
+    .store > div {
+        width: 45%;
+    }
 }
 /* responsive movil */
 @media screen and (max-width: 480px){
@@ -498,6 +526,13 @@ label{
     .dog-card{
         width: 40%;
         margin: 1em;
+    }
+    .store{
+        flex-direction: column;
+        align-items: center;
+    }
+    .store .shop-item{
+        width: 90%;
     }
 }
 
