@@ -57,9 +57,9 @@ function deleteItem(e){
 
         cartItems.forEach(value => {
             if (value.id == deleteId){
-                let priceSubstract = parseFloat(value.price) * parseFloat(value.amount);
+                let priceSubstract = parseInt(value.price) * parseInt(value.amount);
                 cartTotal = cartTotal - priceSubstract;
-                cartTotal = cartTotal.toFixed(2);
+                
             }
         });
         cartItems = cartItems.filter(product => product.id !== deleteId);
