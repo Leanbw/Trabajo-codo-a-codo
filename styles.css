@@ -200,7 +200,6 @@ a:hover{
   }
 .card:hover{
     transform: scale(1.1);
-    margin: 0 auto;
 }
 .card-img {
     border-radius: 10px;
@@ -350,6 +349,18 @@ a:hover{
     justify-content: space-around;
     width: 30%;
     padding: 1em 1em;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: white;
+    transition: 0.2s;
+    margin: 5px 5px 5px 5px;
+}
+.shop-item:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 1px solid gray;
+    
 }
 .shop-item div img{
     width: 30%;
@@ -360,11 +371,7 @@ a:hover{
 .shop-item a{
     margin-top: 1em;
 }
-.store-menu{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-}
+
 label{
     margin-right: 5px;
 }
@@ -411,19 +418,16 @@ label{
     margin: auto;
     padding: 10px 15px;
     display: block;
-    background-color: rgb(251, 81, 81);
-    border-radius: 10px;
+    transition: ease-in-out 0.5s;
 }
 .btn-buy:hover{
-    transform: scale(1.5);
-    transition: ease-in-out 0.5s;
-    cursor: pointer;
+    transform: scale(1.2);
+    background-color: #1763a5;
+    color: #fff;
 }
 /* responsive tablet */
-@media screen and (max-width: 1085px){
-    body{
-        background:#000;
-    }
+@media screen and (max-width: 1020px){
+
     .wrapper .header{
         flex-wrap: nowrap;
     }   
@@ -453,18 +457,15 @@ label{
     .local-info > * {
         width: 100%;
     }
-    .store{
-        justify-content: flex-start;
-    }
+    
     .store > div {
-        width: 45%;
+        width: 40%;
     }
+  
 }
 /* responsive movil */
 @media screen and (max-width: 480px){
-    body{
-    background: white;
-}       
+   
     nav{
         display: none;
     }
@@ -560,7 +561,7 @@ label{
     display:block;
     width:100%;
     height:100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 .slider-btn{
     position: absolute;

@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinaria Silvestre</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="js/scripts.js"></script>
     <script src="https://kit.fontawesome.com/841a678cc4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/headicon.png">
 </head>
 <body>
     <div class="wrapper">
@@ -21,9 +21,9 @@
                 <a href="store.html" class="nav-link ">Tienda <i class="fa-solid fa-paw"></i></a>
                 <a href="about us.html" class="nav-link">Sobre nosotros <i class="fa-solid fa-shield-dog"></i></a>
                 <a href="contacto.html" class="nav-link">Contacto <i class="fa-solid fa-syringe"></i></i></a>
-                <a href="cart.html" class="nav-link">Mi carrito <i class="fa-solid fa-cart-shopping"></i> $0</a>
+                <a href="cart.html" class="nav-link totalCartPrice">Mi carrito <i class="fa-solid fa-cart-shopping"></i> $0</a>
             </nav>
-            <button class="burguer-menu nav-link" onclick="display()"><i class="fa-solid fa-bars"></i></button>
+            <button class="burguer-menu nav-link"><i class="fa-solid fa-bars"></i></button>
             <div>
                 <a href="https://web.whatsapp.com/" target="_blank" ><i class="fa-brands fa-whatsapp nav-link icons"></i></a>
                 <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook nav-link icons"></i></a>
@@ -37,97 +37,89 @@
             <a href="store.html" class="nav-link">Tienda <i class="fa-solid fa-paw"></i></a>
             <a href="about us.html" class="nav-link">Sobre nosotros <i class="fa-solid fa-shield-dog"></i></a>
             <a href="contacto.html" class="nav-link">Contacto <i class="fa-solid fa-syringe"></i></i></a>
-            <a href="cart.html" class="nav-link">Mi carrito <i class="fa-solid fa-cart-shopping"></i> $0</a>
+            <a href="cart.html" class="nav-link totalCartPrice">Mi carrito <i class="fa-solid fa-cart-shopping"></i> $0</a>
         </div>
         
         <div class="main">
             
             <h2 class="title">Tienda</h2>
-            <div class="store-menu">
-                <h4 class="nav-link" id="filters-btn">Filtros</h4> 
-            </div>    
-            <div class="filterMenu" id="filterMenu" style="display: none;">
-                <label class="nav-link">Cepillos y cuidado <input type="checkbox" id="brush-filter"></label>
-                <label class="nav-link">Juguetes <input type="checkbox" id="toy-filter"></label>
-                <label class="nav-link">Alimentos <input type="checkbox" id="food-filter"></label>
-            </div>
-            
+           
             <div class="store">
                 
-                <div class="shop-item brush-item">
+                <div class="shop-item">
                     <div>
-                        <img src="img/producto1.webp" alt="">
+                        <img src="img/producto1.webp" alt="Guante Para Peinar Saca Pelos Perro Gato Pelusa Animales">
                         <p class="item-name">Guante Para Peinar Saca Pelos Perro Gato Pelusa Animales</p><br>
                         <p>$ <span>799</span></p>
                     </div>                        
                         <a href="" data-id="1" class="btn-cart btn-news">Agregar al carrito</a>
                 </div>
-                    <div class="shop-item toy-item">
+                    <div class="shop-item">
                         <div>
-                            <img src="img/producto2.webp" alt="">
+                            <img src="img/producto2.webp" alt="Pesa Denta Fun Cuidado Dental Perros Cachorros">
                             <p class="item-name">Pesa Denta Fun Cuidado Dental Perros Cachorros</p><br>
                             <p>$ <span>1349</span></p>
                         </div>
                             <a href="" data-id="2" class="btn-cart btn-news">Agregar al carrito</a>
                     </div>
                 
-                    <div class="shop-item brush-item">
+                    <div class="shop-item">
                         <div>
-                            <img src="img/producto3.webp" alt="">
+                            <img src="img/producto3.webp" alt="Cepillo De Dientes X 2 Unidades Para Mascotas">
                             <p class="item-name">Cepillo De Dientes X 2 Unidades Para Mascotas</p><br>
                             <p>$ <span>659</span></p>
                         </div>                            
                             <a href="" data-id="3" class="btn-cart btn-news">Agregar al carrito</a>
                     </div>
 
-                    <div class="shop-item toy-item">
+                    <div class="shop-item">
                         <div>
-                            <img src="img/producto4.webp" alt="">
+                            <img src="img/producto4.webp" alt="Kong Jump n Jack Large Cuidado Dental Y Rebote Impredecible">
                             <p class="item-name">Kong Jump n Jack Large Cuidado Dental Y Rebote Impredecible</p><br>
                             <p>$ <span>7239</span></p>
                         </div>                            
                             <a href="" data-id="4" class="btn-cart btn-news">Agregar al carrito</a>
                     </div>
 
-                    <div class="shop-item brush-item">
+                    <div class="shop-item">
                         <div>
-                            <img src="img/producto5.webp" alt="">
+                            <img src="img/producto5.webp" alt="Peine Oster Profesional Acabado Cuidado 10 Perros Y Gatos">
                             <p class="item-name">Peine Oster Profesional Acabado Cuidado 10 Perros Y Gatos</p><br>
                             <p>$ <span>3549</span></p>
                         </div>                            
                             <a href="" data-id="5" class="btn-cart btn-news">Agregar al carrito</a>
                     </div>
 
-                    <div class="shop-item food-item">
+                    <div class="shop-item">
                         <div>
-                            <img src="img/producto6.webp" alt="">
+                            <img src="img/producto6.webp" alt="Alimento Royal Canin Size Health Nutrition Mini Adult para perro adulto de raza pequeña sabor mix en bolsa de 7.5 kg">
                             <p class="item-name">Alimento Royal Canin Size Health Nutrition Mini Adult para perro adulto de raza pequeña sabor mix en bolsa de 7.5 kg</p><br>
                             <p>$ <span>7630</span></p>
                         </div>                            
                             <a href="" data-id="6" class="btn-cart btn-news">Agregar al carrito</a>
                     </div>
 
-                    <div class="shop-item food-item">
+                    <div class="shop-item">
                         <div>
-                            <img src="img/producto7.webp" alt="">
+                            <img src="img/producto7.webp" alt="Alimento Royal Canin Size Health Nutrition Medium Adult para perro adulto de raza mediana sabor mix en bolsa de 15 kg">
                             <p class="item-name">Alimento Royal Canin Size Health Nutrition Medium Adult para perro adulto de raza mediana sabor mix en bolsa de 15 kg</p><br>
                             <p>$ <span>11950</span></p>
                         </div>                            
                             <a href="" data-id="7" class="btn-cart btn-news">Agregar al carrito</a>
                     </div>
 
-                    <div class="shop-item food-item">
+                    <div class="shop-item">
                         <div>
-                            <img src="img/producto8.webp" alt="">
+                            <img src="img/producto8.webp" alt="Alimento Royal Canin Veterinary Diet Canine Urinary S/O para perro adulto todos los tamaños sabor mix en bolsa de 10 kg">
                             <p class="item-name">Alimento Royal Canin Veterinary Diet Canine Urinary S/O para perro adulto todos los tamaños sabor mix en bolsa de 10 kg</p><br>
                             <p>$ <span>11200</span></p>
                         </div>                            
                             <a href="" data-id="8" class="btn-cart btn-news">Agregar al carrito</a>
                     </div>
 
-                    <div class="shop-item toy-item">
+                    <div class="shop-item">
                         <div>
-                            <img src="img/producto9.webp" alt="">
+                            <img src="img/producto9.webp" alt="Kong Bone Extreme Medium Para Perros Juguete Nº 1 Del Mundo">
                             <p class="item-name">Kong Bone Extreme Medium Para Perros Juguete Nº 1 Del Mundo</p><br>
                             <p>$ <span>6131</span></p>
                         </div>                            
@@ -184,6 +176,8 @@
         </div>
         <div class="disclaimer"><p>Esta página esta hecha a modo de prueba por estudiantes del curso Codo a codo 2022, los datos no son reales y las imagenes pueden estar sujetas a derechos de autor.</p></div>
     </div>    
-    <script src="js/store.js"></script>
+    <script src="js/store.js" type="module"></script>
+    <script src="js/storage.js" type="module"></script>
+    <script src="js/scripts.js" type="module"></script>
 </body>
 </html>

@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinaria Silvestre</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="js/scripts.js"></script>
     <script src="https://kit.fontawesome.com/841a678cc4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/headicon.png">
 </head>
 <body>
     <div class="wrapper">
@@ -21,9 +21,9 @@
                 <a href="store.html" class="nav-link ">Tienda <i class="fa-solid fa-paw"></i></a>
                 <a href="about us.html" class="nav-link">Sobre nosotros <i class="fa-solid fa-shield-dog"></i></a>
                 <a href="contacto.html" class="nav-link">Contacto <i class="fa-solid fa-syringe"></i></i></a>
-                <a href="cart.html" class="nav-link">Mi carrito <i class="fa-solid fa-cart-shopping"></i> $0</a>
+                <a href="cart.html" class="nav-link totalCartPrice">Mi carrito <i class="fa-solid fa-cart-shopping"></i> $0</a>
             </nav>
-            <button class="burguer-menu nav-link" onclick="display()"><i class="fa-solid fa-bars"></i></button>
+            <button class="burguer-menu nav-link"><i class="fa-solid fa-bars"></i></button>
             <div>
                 <a href="https://web.whatsapp.com/" target="_blank" ><i class="fa-brands fa-whatsapp nav-link icons"></i></a>
                 <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook nav-link icons"></i></a>
@@ -31,12 +31,13 @@
                 <a href="index.html"><img src="img/headicon.png" class="logo"></a>
             </div>
         </div>
+
         <div class="menuMobile" id="menuMobile" style="display: none;">
             <a href="index.html" class="nav-link">Inicio <i class="fa-solid fa-house"></i></a>
             <a href="store.html" class="nav-link">Tienda <i class="fa-solid fa-paw"></i></a>
             <a href="about us.html" class="nav-link">Sobre nosotros <i class="fa-solid fa-shield-dog"></i></a>
             <a href="contacto.html" class="nav-link">Contacto <i class="fa-solid fa-syringe"></i></i></a>
-            <a href="cart.html" class="nav-link">Mi carrito <i class="fa-solid fa-cart-shopping"></i> $0</a>
+            <a href="cart.html" class="nav-link totalCartPrice">Mi carrito <i class="fa-solid fa-cart-shopping"></i> $0</a>
         </div>
         
         <div class="main main-contacto">
@@ -110,6 +111,8 @@
         </div>
         <div class="disclaimer"><p>Esta página esta hecha a modo de prueba por estudiantes del curso Codo a codo 2022, los datos no son reales y las imagenes pueden estar sujetas a derechos de autor.</p></div>
     </div>
+    <script src="js/scripts.js" type="module"></script>
     <script src="js/validacion.js"></script>
+    
 </body>
 </html>
