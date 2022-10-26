@@ -8,8 +8,7 @@
     
 }
 body{
-    background-image: url(img/dog-paws-pattern.jpg);
-
+    background-image: url(img/dog-paws-pattern.jpg);    
 }
 
 .wrapper{
@@ -55,8 +54,7 @@ a:hover{
     align-items: center;
     gap: 5px;
 }
-.header .burguer-menu{
-   
+.header .burguer-menu{   
     border: none;
 }
 .wrapper .menuMobile{
@@ -89,6 +87,7 @@ a:hover{
     grid-column-start: 1;
     grid-column-end: -1;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     font-size: 1em;
@@ -113,13 +112,27 @@ a:hover{
 .logonombre {
     height: 4em;
 }
+.footer div{
+    width: 30%;
+}
+.socials{
+    display: flex;
+    justify-content: center; 
+    align-items: center;       
+}
+.socials > a {
+    margin: 5px;
+
+}
 .wrapper .footer .newsletter{
+    margin-top: 20px;
     align-content: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
     align-items: center;
+    width: 100%;
 }
 .nav-link{    
     padding: 0.4em;
@@ -144,7 +157,6 @@ a:hover{
     border-radius: 15%;
     color:white;
 }
-
 .header .burguer-menu{
     display: none;   
 }
@@ -212,11 +224,11 @@ a:hover{
     border-style: dashed;
 }
 .brand-container{
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .brand-item{
     margin: 0 1em 0 1em;
@@ -228,8 +240,7 @@ a:hover{
     overflow: hidden;
 }
 .map-iframe{
-    margin-top: -50px;
-   
+    margin-top: -50px;   
 }
 .map-info{
     display: flex;
@@ -252,11 +263,9 @@ a:hover{
     font-size: 16px;
     margin: 5px 0px 5px 0px;
 }
-
 ::placeholder{
     color:white;
-    opacity: 60%;
-    
+    opacity: 60%;    
 }
 .main-contacto{
     display:flex;
@@ -272,8 +281,7 @@ a:hover{
     color: #fff;
     font-size: 16px;
     border:2px solid #082b49;
-    width: 100%;
-    
+    width: 100%;    
 }
 .btn-submit:hover{   
     color: black;
@@ -297,7 +305,6 @@ a:hover{
     justify-content: space-around;
     align-items: center;
 }
-
 .vet-card{
     background-color: #1763a5;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -317,7 +324,6 @@ a:hover{
     border-radius: 15px;
     box-shadow: 6px 8px 20px #000;
     margin: 1em 0;
-    
 }
 .local-info{
     display: flex;
@@ -359,19 +365,16 @@ a:hover{
 .shop-item:hover{
     transform: scale(1.03);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border: 1px solid gray;
-    
+    border: 1px solid gray;    
 }
 .shop-item div img{
     width: 30%;
     height: 150px;
     object-fit: scale-down;
 }
-
 .shop-item a{
     margin-top: 1em;
 }
-
 label{
     margin-right: 5px;
 }
@@ -426,14 +429,11 @@ label{
     color: #fff;
 }
 /* responsive tablet */
-@media screen and (max-width: 1020px){
-
+@media screen and (max-width: 1020px){    
     .wrapper .header{
         flex-wrap: nowrap;
-    }   
-    .wrapper .header {
         justify-content: space-between;
-    }
+    }    
     .header .burguer-menu{
         display: flex;
         font-size: 1.5em;
@@ -441,38 +441,29 @@ label{
     nav{
         display: none;
     }
-    .footer div{
-        width:50%;
-    }
-    .newsletter{
-        width: 100%;
-        align-self: flex-end;
-    }
     .wrapper .footer div{
         margin: 0em 1em 0em 1em;
+        width: 25%;
     }
+  
     .local-info{
         flex-direction: column;
     }
     .local-info > * {
         width: 100%;
-    }
-    
+    }    
     .store > div {
         width: 40%;
-    }
-  
+    }  
 }
 /* responsive movil */
-@media screen and (max-width: 480px){
-   
+@media screen and (max-width: 480px){ 
     nav{
         display: none;
     }
     .header {
         justify-content: center;
-    }
-   
+    }   
     nav{
         display: none;
     }
@@ -484,21 +475,21 @@ label{
         justify-content: center;
         align-content: center;
         flex-direction: column;
-
+        align-items: center;
+    }
+    .footer .dashed {
+        width: 80%;
     }
     .wrapper .footer div{
         margin: 1em 0 1em 0;
-    }
+        width: 70%;        
+    }    
     .main .container-slider{
         height: 200px;
     }
     .container-slider .slider {
         height: 200px;
-    }
-    .socials{
-        display: flex;
-        justify-content: space-around;
-    }
+    }    
     .card-container{
         flex-wrap: wrap;
         margin-top: 1em;
@@ -536,10 +527,15 @@ label{
         width: 90%;
     }
 }
-
-
+@media screen and (max-width: 390px){
+    .header-socials{
+        display:none;
+    }
+    .dog-card {
+        width: 80%;
+    }
+}
 /* slider */
-
 .container-slider {
     width: 100%;
     margin:auto;
