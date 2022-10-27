@@ -80,6 +80,7 @@ a:hover{
     grid-row-start: 3;
     grid-column-start: 1;
     grid-column-end: -1;
+ 
 }
 
 .wrapper .footer{
@@ -391,6 +392,7 @@ label{
     border: solid 2px black;
     border-radius: 10px;
     padding: 10px 0 15px 0 ;
+    box-sizing:border-box;
 }
 .cart-item img{
     object-fit:scale-down;
@@ -528,6 +530,7 @@ label{
     }
 }
 @media screen and (max-width: 390px){
+    
     .header-socials{
         display:none;
     }
